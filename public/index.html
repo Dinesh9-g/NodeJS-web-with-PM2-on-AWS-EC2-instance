@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -8,6 +8,243 @@
 <body>
     <h1>Hello from Dockerized Node.js App!</h1>
     <p>Visit <code>/api</code> to test the backend.</p>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakshitha Organics Farm</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f9f0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #4a8f29;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #3a7320;
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #2d5a16;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .hero {
+            background-image: url('https://img.khetivyapar.com/images/blogs/1702368660-organic-plant-vegetables.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-info {
+            padding: 1rem;
+        }
+        
+        footer {
+            background-color: #2d5a16;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-height: 300px;
+            background-image: url('https://images.unsplash.com/photo-1606787366850-de6330128bfc');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+        
+        .about-content {
+            flex: 1;
+        }
+        
+        .docker-info {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rakshitha Organics Farms</h1>
+        <p>Naturally grown, sustainably harvested</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="home">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Farm Fresh Organic Produce</h2>
+                    <p>Delivered straight from our fields to your table</p>
+                </div>
+            </div>
+            
+            <h2>Why Choose Organic?</h2>
+            <p>Our organic products are grown without synthetic pesticides, GMOs, or artificial fertilizers. We prioritize soil health, biodiversity, and sustainable farming practices to bring you the purest, most nutritious food possible.</p>
+        </section>
+        
+        <section id="products">
+            <h2>Our Organic Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1518977676601-b53f82aba655')"></div>
+                    <div class="product-info">
+                        <h3>Organic Vegetables</h3>
+                        <p>Seasonal, fresh-picked vegetables grown with care</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550258987-190a2d41a8ba')"></div>
+                    <div class="product-info">
+                        <h3>Organic Fruits</h3>
+                        <p>Sweet, juicy fruits bursting with natural flavor</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff')"></div>
+                    <div class="product-info">
+                        <h3>Organic Herbs</h3>
+                        <p>Aromatic herbs for cooking and wellness</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1597362925123-77861d3fbac7')"></div>
+                    <div class="product-info">
+                        <h3>Organic Grains</h3>
+                        <p>Nutritious whole grains for your pantry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2>About Rakshitha Organics Farm </h2>
+            <div class="about-section">
+                <div class="about-image"></div>
+                <div class="about-content">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2024, Rakshitha Organics Farm began as a small family farm dedicated to sustainable agriculture. Today, we've grown into a trusted provider of organic produce while maintaining our commitment to environmental stewardship and community health.</p>
+                    <h3>Our Mission</h3>
+                    <p>To provide fresh, organic food while protecting the land for future generations. We believe in transparency, sustainability, and the power of nature to nourish both people and planet.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="docker-info">
+            <h3>Dockerized Node.js App Notice</h3>
+            <p>This website is powered by a  Node.js application. Visit <code>/api</code> to test the backend functionality.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Rakshitha Organics Farm. All rights reserved.</p>
+        <p> Node.js Application</p>
+    </footer>
 </body>
 
 </html>

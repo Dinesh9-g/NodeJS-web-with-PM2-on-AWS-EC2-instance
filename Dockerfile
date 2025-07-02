@@ -1,20 +1,24 @@
-# Base image
-FROM node:18
+# Stage 1: Builder
+FROM node:18-alpine AS builder
 
-# Set working directory
 WORKDIR /app
 
-# Copy package files first (for caching layer)
-COPY package*.json ./
-
 # Install dependencies
+COPY package*.json ./
 RUN npm install
 
 # Copy rest of the app
 COPY . .
 
-# Expose the port
+# Stage 2: Runtime
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy built files from builder
+COPY --from=builder /app ./
+
 EXPOSE 3000
 
-# Start the server
 CMD ["npm", "start"]
+

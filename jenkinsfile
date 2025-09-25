@@ -10,13 +10,13 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'echo "testing application...."'
+                sh 'echo "testing application."'
             }
         }
 
         stage('Deploy Node.js Application') {
             steps {
-                sh 'echo "deploying application ...."'
+                sh 'echo "deploying application."'
             }
         }
     }
